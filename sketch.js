@@ -1,11 +1,16 @@
 var box;
 
+function preload() {
+  boxImage = loadImage("mainPlayer1.png");
+}
+
 function setup() {
   createCanvas(400,400);
-  boxImage = loadImage("mainPlayer1.png");
 
   box = createSprite(200,200,30,30);
   box.addImage(boxImage);
+  box.scale = 0.1;
+  //box.debug = true;
 }
 
 function draw() {
