@@ -29,6 +29,9 @@ function draw() {
     background("green");
   }
 
+  edges = createEdgeSprites();
+  box.collide(edges);
+
   drawSprites();
 }
 
